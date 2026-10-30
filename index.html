@@ -441,9 +441,10 @@
     margin-top: 2rem;
   }
   .card-wide { grid-column: 1 / -1; }
-  .card-wide p { max-width: 72ch; }
+  .card-wide p { max-width: 72ch; margin-inline: auto; }
   .card-wide p + p { margin-top: 0.6rem; }
   .card {
+    text-align: center;
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 14px;
@@ -605,6 +606,8 @@
   }
   .privacy, .hint { color: var(--text-soft); font-size: 0.95rem; }
   .hint { margin-bottom: 1.15rem; }
+  #inq-message-count { display: block; margin-top: 0.25rem; }
+  #inq-message-count.is-over { color: var(--danger); font-weight: 600; }
 
   .confirmation h3 { margin-bottom: 0.6rem; }
   .confirmation p { color: var(--text-soft); }
@@ -830,7 +833,7 @@
         </li>
         <li class="reveal">
           <h3>Your decision</h3>
-          <p>No one imposes an outcome. You name the questions that need attention, and you shape the answers together. If you reach an understanding, you can write it down. If you do not, you can stop.</p>
+          <p>No one imposes an outcome. You name the questions that need attention, and you shape the answers together. If you reach an understanding, you can write it down. If you do not, nothing is imposed on you.</p>
         </li>
       </ul>
     </div>
@@ -839,7 +842,7 @@
   <section class="section" id="services" aria-labelledby="services-title">
     <div class="wrap">
       <h2 id="services-title">Matters people bring</h2>
-      <p class="section-intro measure">Mediation only goes ahead if the people involved agree to take part. If your situation does not match a card, you can still write. We will tell you if we are not the right fit.</p>
+      <p class="section-intro measure">Mediation works best when everyone comes to it ready to listen and keep an open mind. If your situation does not match a card, you can still write. We will tell you if we are not the right fit.</p>
       <div class="cards">
         <article class="card reveal">
           <h3>Family and separation</h3>
@@ -869,7 +872,7 @@
   <section class="section" id="how" aria-labelledby="how-title">
     <div class="wrap">
       <h2 id="how-title">How it works</h2>
-      <p class="section-intro measure">Four steps, starting with a free conversation and ending with whatever you decide. Nothing moves ahead unless the people involved agree.</p>
+      <p class="section-intro measure">Four steps, starting with a free conversation and ending with whatever you decide. No one can make you accept an agreement.</p>
       <ol class="steps">
         <li class="reveal">
           <span class="step-num" aria-hidden="true">01</span>
@@ -884,16 +887,16 @@
         <li class="reveal">
           <span class="step-num" aria-hidden="true">03</span>
           <h3>Online sessions</h3>
-          <p>If everyone agrees to take part, you meet by video. Each person has time to speak. We keep the conversation respectful and on the questions you came to settle.</p>
+          <p>Once everyone is prepared, you meet by video. Each person has time to speak. We keep the conversation respectful and on the questions you came to settle.</p>
         </li>
         <li class="reveal">
           <span class="step-num" aria-hidden="true">04</span>
           <h3>Written agreement</h3>
-          <p>If you reach an understanding, we can help you write it down. Each person may have their own lawyer review it before anyone signs. If you do not agree, you can stop. Nothing is imposed.</p>
+          <p>If you reach an understanding, we can help you write it down. Each person may have their own lawyer review it before anyone signs. If you do not reach agreement, nothing is imposed.</p>
         </li>
       </ol>
       <div class="expect">
-        <p>A video session is close to sitting in the same room, without the travel. You can see each other, you speak one at a time, and you can take a break. You will want a private space, a steady connection, and a device with a camera and microphone. We send the link, and a short note on how to prepare, before you meet.</p>
+        <p>You will not walk into your first joint session cold. By then you will have had your free consultation and a private intake meeting, where we prepare you for the session: how it will run, which questions to start with, and anything you should gather beforehand. The session itself is close to sitting in the same room, without the travel. You can see each other, speak one at a time, and step aside privately with the mediator when you need a break. All you need is a private space, a steady connection, and a device with a camera and microphone.</p>
       </div>
     </div>
   </section>
@@ -913,7 +916,7 @@
         </li>
         <li class="reveal">
           <h3>What if the other person is not ready?</h3>
-          <p>You can still book a consultation on your own. Mediation only goes ahead if everyone agrees to take part, so we can talk about how to raise the idea with them.</p>
+          <p>You can still book a consultation on your own. Mediation works best when everyone is willing to take part, so we can talk about how to raise the idea with them.</p>
         </li>
         <li class="reveal">
           <h3>How long does it take?</h3>
@@ -951,11 +954,11 @@
       </div>
       <div>
         <h2 id="about-title">About us</h2>
-        <p class="section-intro">Clearwater ADR was founded by Anna Grigorovich, a mediator in Ontario who has completed advanced mediation training. She works with families, workplaces, and organizations to help people talk through disagreements and reach practical agreements.</p>
-        <p class="measure">We are not a law firm. We do not give legal advice, and we do not represent either person who takes part. If you need advice about your rights, speak with a lawyer of your own.</p>
+        <p class="section-intro">I am Anna Grigorovich, the founder of Clearwater ADR. I am a mediator in Ontario, and I completed advanced alternative dispute resolution training with the Stitt Feld Handy Group. I work with families, workplaces, and organizations to help people talk through disagreements and reach practical agreements.</p>
+        <p class="measure">Clearwater ADR is not a law firm. I do not give legal advice, and I do not represent either person who takes part. If you need advice about your rights, speak with a lawyer of your own.</p>
         <div class="notices">
           <h3>Before you book</h3>
-          <p>Mediation is a voluntary process led by a supportive facilitator who does not take sides. You choose to take part, and you can stop.</p>
+          <p>Mediation is led by a supportive facilitator who does not take sides. Sometimes a court requires people to attempt mediation. Even then, any agreement you reach is your own choice.</p>
           <p>The mediator does not provide legal advice or represent either party. Participants may wish to obtain independent legal advice.</p>
           <p>Sessions are conducted on a confidential basis under a signed agreement to mediate. Confidentiality has legal limits, and those limits are explained before a session.</p>
         </div>
@@ -998,12 +1001,12 @@
           <div class="field">
             <label for="inq-message">What is going on?</label>
             <textarea id="inq-message" name="message" required aria-describedby="inq-message-hint" data-hint="inq-message-hint"></textarea>
-            <p class="hint" id="inq-message-hint">A few sentences is enough. Please do not attach documents here.</p>
+            <p class="hint" id="inq-message-hint">Share whatever you feel is important, in your own words, up to 250 words. Please do not attach documents here. <span id="inq-message-count">0 of 250 words</span></p>
             <p class="field-error" id="inq-message-error" hidden></p>
           </div>
           <p class="form-error" id="form-error" role="alert" hidden></p>
           <div class="form-actions">
-            <button class="btn" type="submit">Request my free consultation</button>
+            <button class="btn" type="submit">Request a free consultation</button>
           </div>
           <p class="privacy">What you send is used only to respond to this inquiry. It is not added to a mailing list, and it is not shared for any other purpose.</p>
         </form>
@@ -1026,7 +1029,7 @@
       <p><a class="inline-link" href="mailto:annagrigorovichh@gmail.com">annagrigorovichh@gmail.com</a></p>
     </div>
     <div class="fine">
-      <p>Mediation is a voluntary process led by a supportive facilitator who does not take sides.</p>
+      <p>Mediation is led by a supportive facilitator who does not take sides. Any agreement is reached by the participants, never imposed.</p>
       <p>The mediator does not provide legal advice or represent either party. Participants may wish to obtain independent legal advice.</p>
       <p>Sessions are conducted on a confidential basis under a signed agreement to mediate. The law places limits on confidentiality, and those limits are explained before a session.</p>
     </div>
@@ -1114,8 +1117,24 @@
     var resetBtn = document.getElementById("form-reset");
     var formError = document.getElementById("form-error");
     var phone = document.getElementById("inq-phone");
-    var MAILTO_LIMIT = 2000;
+    var MAILTO_LIMIT = 3000;
+    var WORD_LIMIT = 250;
+    var messageInput = document.getElementById("inq-message");
+    var wordCount = document.getElementById("inq-message-count");
     form.noValidate = true;
+
+    function countWords(text) {
+      var trimmed = text.trim();
+      return trimmed ? trimmed.split(/\s+/).length : 0;
+    }
+
+    function updateWordCount() {
+      var words = countWords(messageInput.value);
+      wordCount.textContent = words + " of " + WORD_LIMIT + " words";
+      wordCount.classList.toggle("is-over", words > WORD_LIMIT);
+    }
+
+    messageInput.addEventListener("input", updateWordCount);
 
     var fields = [
       ["inq-name", "inq-name-error"],
@@ -1173,8 +1192,11 @@
       if (replyByPhone() && phoneValue.length < 7) {
         fail("inq-phone", "inq-phone-error", "Please add a phone number, since you asked for a call.");
       }
+      var words = countWords(message);
       if (message.length < 8) {
         fail("inq-message", "inq-message-error", "Please add a little more detail, even a sentence or two.");
+      } else if (words > WORD_LIMIT) {
+        fail("inq-message", "inq-message-error", "Please shorten your note to " + WORD_LIMIT + " words or fewer. It is " + words + " words now.");
       }
       if (first) first.focus();
       return !first;
@@ -1228,6 +1250,7 @@
           if (!response.ok) throw new Error("Request failed");
           submitBtn.disabled = false;
           form.reset();
+          updateWordCount();
           showConfirmation(
             "Thank you. We have your note.",
             "We will reply by email. If you need to add anything, write to " + emailLink() + ".",
