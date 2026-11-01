@@ -636,7 +636,17 @@
     margin: 0 0 0.35rem;
   }
   .fine { color: var(--text-soft); font-size: 0.95rem; }
-  .fine p { max-width: 70ch; }
+  .fine h2 {
+    margin: 0 0 0.7rem;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.4;
+    color: var(--text);
+  }
+  .fine p { max-width: 70ch; margin-bottom: 0.85rem; }
+  .fine p:last-child { margin-bottom: 0; }
   .social-label {
     margin: 1.15rem 0 0.55rem;
     font-weight: 600;
@@ -658,17 +668,8 @@
   }
   .social svg { width: 20px; height: 20px; display: block; }
 
-  .disclaimer { margin-top: 1.75rem; max-width: 78ch; }
-  .disclaimer h2 {
-    margin: 0 0 0.35rem;
-    font-family: var(--sans);
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-  .disclaimer p { margin: 0; color: var(--text-soft); font-size: 0.95rem; }
   .legal {
-    margin-top: 1.25rem;
+    margin-top: 1.75rem;
     color: var(--text-soft);
     font-size: 0.95rem;
   }
@@ -1091,16 +1092,13 @@
       </div>
     </div>
     <div class="fine">
-      <p>Mediation is led by a supportive facilitator who does not take sides. Any agreement is reached by the participants, never imposed.</p>
-      <p>The mediator does not provide legal advice or represent either party. Participants may wish to obtain independent legal advice.</p>
-      <p>Sessions are conducted on a confidential basis under a signed agreement to mediate. The law places limits on confidentiality, and those limits are explained before a session.</p>
+      <h2>Legal Disclaimer</h2>
+      <p>Mediation is a voluntary, impartial process in which the mediator facilitates discussion but does not take sides, provide legal advice, or impose decisions. Any agreement is reached by the participants, who remain responsible for their own decisions.</p>
+      <p>Information on this website is for general informational purposes only and does not constitute legal advice. Participants are encouraged to obtain independent legal advice (ILA), particularly before signing any agreement or legal document.</p>
+      <p>Mediation is conducted in accordance with an agreement to mediate. Confidentiality is subject to applicable legal limits, which will be explained before mediation begins. Mediation does not guarantee a resolution or agreement.</p>
     </div>
   </div>
   <div class="wrap">
-    <div class="disclaimer">
-      <h2>Legal Disclaimer</h2>
-      <p>Information on this website may contain legal information but is not to be interpreted as legal advice. It is strongly recommended that you obtain Independent Legal Advice (ILA) before signing any documentation.</p>
-    </div>
     <p class="legal">&copy; <span id="year">2026</span> Clearwater ADR</p>
   </div>
 </footer>
